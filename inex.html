@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap By SKILLHUB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/toast.css">
+</head>
+
+
+<body class="" bg-dark">
+
+    <div class="container">
+        <div id="tc"></div>
+        <h1 class="text-light">Network Pro</h1>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="./asset/js/toast.js"></script>
+
+    <script>
+        //condolelog(navigator)
+        //console,log("window")
+
+        function handleNetwork() {
+            if (navigator.online) {
+                console.log("online");
+                toastify("bg-succes", "Online")
+            } else {
+                console.log("offline")
+                toastify("bg-danger", "Offline, Please Check your Network")
+            }
+        }
+        window.addEventListener("online", handleNetwork)
+        window.addEventListener("offline", handleNetwork)
+
+
+
+    </script>
+</body>
+
+</html>
+//git ini
+//git remote add origin GITHUB_ CHI_LINK
+
+//git add
+git comit-m" initial commit"
+git push origin master
